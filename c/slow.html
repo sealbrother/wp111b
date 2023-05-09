@@ -1,41 +1,49 @@
 <!DOCTYPE html>
 <html>
 <head>
-</head>
 <style>
-div {
-  background-color: yellow;
-  width: 150px;
-  border: 15px solid green;
-  padding: 50px;
-  margin: 20px;
+body
+{
+    margin:10px;
+}
+p {
+        font-size: 50px;
+    }
+#nav
+{
+    background-color:#0000FF;
+    width:20px;
+    height:100%;
+    transition: width 1s;
+}
+#nav:hover
+{
+    width:400px;
+}
+#navMain
+{
+    padding-left:100px;
+    padding-top:100px;
+}
+#nav a
+{
+    color:#FFFFFF;
+    white-space: nowrap;
+    text-decoration: none;
+}
+#nav a:hover
+{
+    color:red;
 }
 </style>
+</head>
 <body>
-
-<h1><h1 style="background-color:Tomato;">蔡杰叡的網頁</h1></h1>
-
-<h2><h1 style="background-color:SlateBlue;">我的自傳</h1></h1>
-
-<div>我綽號海豹弟,金門人,住瓊林,是個擁有多種人格特質的人</div>
-
-
-<h2><h1 style="background-color:DodgerBlue;">我的連結</h1></h1>
-
-<p><b><a href="https://www.facebook.com/profile.php?id=" target="_blank">FB</a></b></p>
-<p><b><a href="https://www.youtube.com/" target="_blank">YT</a></b></p>
-
-<h2><h1 style="background-color:MediumSeaGreen;">我喜歡喝</h1></h1>
-<ol class="c">
-  <li><p style="color:red;">檸檬汁</p></li>
-  <li><p style="color:red;">茶</p></li>
-</ol>
- <h1 style="background-color:Violet;">我喜歡的照片</h1>
-  <a target="_blank" href="img_lights.jpg">
-    <img src="img_lights.jpg" alt="Northern Lights" width="700" height="400">
-  </a>
- <h1 style="background-color:LightGray;">我的照片</h1>
- <img src="蔡杰叡的照片.jpg" width="500"/>
-<br/>
+<div id="nav">
+  <div id="navMain">
+    <p><a href="#aboutus">海豹家族</a></p>
+    <p><a href="#example1">海豚哥</a></p>
+    <p><a href="#example2">海豹弟</a></p>
+  </div>
+</div>
 </body>
 </html>
