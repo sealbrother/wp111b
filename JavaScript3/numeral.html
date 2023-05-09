@@ -1,29 +1,21 @@
-function mmul(a,b) 
+function count(list) 
 {
-  if(a[0].length !==b.length)
+  var cmap = {};
+  for (var i = 0; i < list.length; i++)
   {
-    throw new Error("矩陣大小不符合相乘條件");
-  }
-  //空陣列儲存相乘後的矩陣
-  const result=[];
-  //雙重迴圈計算矩陣相乘
-  for(let i=0; i < a.length;i++) 
-  {
-    result[i]=[];
-    for (let j=0; j < b[0].length;j++)
+    var word = list[i];
+    if (cmap[word]) 
     {
-      let sum = 0;
-      for (let k=0; k < b.length;k++) 
-      {
-        sum +=a[i][k]*b[k][j];
-      }
-      result[i][j]=sum;
+      cmap[word]++;
+    } 
+    else 
+    {
+      cmap[word] = 1;
     }
   }
-  //回傳相乘後的矩陣
-  return result;
+  return cmap;
 }
-//測試
-const a=[[1,2],[1,2]];
-const b=[[1,2],[1,2]];
-console.log(mmul(a, b));//預期[[3,6],[3,6]]
+
+var list = ['a', 'dog', 'chase', 'a', 'cat'];
+var cmap = count(list);
+console.log(cmap); // { a: 2, dog: 1, chase: 1, cat: 1 }
