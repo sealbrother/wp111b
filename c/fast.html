@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body 
+{
+    margin:20px;
+    background-color: lightblue;
+}
+p {
+        font-size: 50px;
+    }
+#nav {
+    background-color:#00ff80;
+    width:20px;
+    height:100%;
+}
+#navMain {
+    padding-left:100px;
+    padding-top:200px;
+}
+#nav a {
+    color:#ff6347;
+    white-space: nowrap;
+    text-decoration: none;
+}
+</style>
+</head>
+<body>
+<div id="nav" onmouseover="navWide()" onmouseout="navNarrow()">
+  <div id="navMain">
+    <p><a href="#aboutus">幽靈家族</a></p>
+    <p><a href="#example1">幽靈叔</a></p>
+    <p><a href="#example2">幽靈桑</a></p>
+    <p><a href="#example3">幽靈別哭</a></p>
+  </div>
+</div>
+<script>
+    function navWide() {
+        let nav = document.getElementById('nav')
+        nav.style.width = '350px';
+    }
+    function navNarrow() {
+        let nav = document.getElementById('nav')
+        nav.style.width = '20px';
+    }
+</script>
+</body>
+</html>
