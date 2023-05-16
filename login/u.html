@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>註冊帳戶</title>
+</head>
+<body>
+    <h1>註冊帳戶</h1>
+
+    <div id="signup-form">
+        <label for="username">使用者名稱：</label>
+        <input type="text" id="username" required><br>
+
+        <label for="password">密碼：</label>
+        <input type="password" id="password" required><br>
+
+        <button onclick="signup()">註冊</button>
+    </div>
+
+    <div id="login-form" style="display:none">
+        <label for="login-username">使用者名稱：</label>
+        <input type="text" id="login-username" required><br>
+
+        <label for="login-password">密碼：</label>
+        <input type="password" id="login-password" required><br>
+
+        <button onclick="login()">登入</button>
+    </div>
+
+    <script src="u.js"></script>
+</body>
+</html>
